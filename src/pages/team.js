@@ -1,39 +1,42 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
 
-export default ({data}) => {
-  console.log(data.allMarkdownRemark.edges);
-  const members = data.allMarkdownRemark.edges;
-  return (
-    <Fragment>
-      <h3>This is our team members</h3>
+class Team extends React.Component {
+  getImageURL(avatar) {
+    console.log(avatar)
+    return 'https://regexone.com/cs/images/favicon.png'
+  }
 
-      <article>
-        {
-          members.map(({node}) => {
+  render() {
+    const { data } = this.props
+    const members = data.allMarkdownRemark.edges
+
+    return (
+      <Fragment>
+        <h3>This is our team members</h3>
+
+        <article>
+          {members.map(({ node }) => {
             return (
-              <div key={node.id}>{
-                node.frontmatter.name
-              }</div>
+              <div key={node.id} className="member">
+                <img src={this.getImageURL(node.frontmatter)} alt={node.frontmatter.name} />
+                <h4>{node.frontmatter.name}</h4>
+              </div>
             )
-          })
-        }
-      </article>
+          })}
+        </article>
 
-      <Link to="/"> Home Page </Link>
-    </Fragment>
-  )
+        <Link to="/"> Home Page </Link>
+      </Fragment>
+    )
+  }
 }
+
+export default Team
 
 export const query = graphql`
   query {
-    allMarkdownRemark (
-      sort: {
-        fields: frontmatter___position
-        order: ASC
-      }
-    )
-    {
+    allMarkdownRemark(sort: { fields: frontmatter___position, order: ASC }) {
       edges {
         node {
           id
@@ -42,6 +45,9 @@ export const query = graphql`
             name
             job
             linkedin
+            twitter
+            instagram
+            avatar
           }
           html
           excerpt
