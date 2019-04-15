@@ -1,12 +1,16 @@
 import React, { Fragment } from "react"
 import Header from './header'
-import "./layout.css"
+import Footer from './footer'
+import "../assets/css/flexboxgrid.css"
+import "../assets/css/custom.css"
 
 
 export default ({ children }) => (
   <Fragment>
-    <Header />
+    <div className="row">
+      <Header />
+    </div>
     <main>{children}</main>
-    <footer>Footer</footer>
+    <Footer />
   </Fragment>
 )

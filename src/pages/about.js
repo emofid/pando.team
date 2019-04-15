@@ -5,7 +5,6 @@ import { graphql } from "gatsby"
 
 export default ({ data }) => (
   <Layout>
-    This is about page
     <Members data={data} />
   </Layout>
 )

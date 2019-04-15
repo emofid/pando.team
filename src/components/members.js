@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/layout"
 
 export default class Members extends React.Component {
   state = {
@@ -35,19 +34,21 @@ export default class Members extends React.Component {
   render() {
     const { members, memberImages } = this.state
     return (
-      <div>
+      <article className="members row">
         {members.map(({ node }) => {
           return (
-            <div key={node.id} className="member">
+            <div key={node.id} className="member col-md-4 col-xs-12">
               <img
                 src={memberImages[node.frontmatter.avatar]}
                 alt={node.frontmatter.name}
               />
-              <h4>{node.frontmatter.name}</h4>
+              <h3>{node.frontmatter.name}</h3>
+              <h5>{node.frontmatter.job}</h5>
+              <div dangerouslySetInnerHTML={{ __html: node.html }} />
             </div>
           )
         })}
-      </div>
+      </article>
     )
   }
 }

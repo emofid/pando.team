@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    This is portfolio page
+    <article className="row center-lg center-md center-sm center-xs main-page">
+      <h3>در این صفحه از اهداف و فعالیت های تیم پاندو خواهیم گفت.</h3>
+    </article>
   </Layout>
 )

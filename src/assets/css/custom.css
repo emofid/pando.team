@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../fonts/shabnam/Shabnam.eot');
+    src: url('../fonts/shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/shabnam/Shabnam.woff') format('woff'),
+    url('../fonts/shabnam/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('../fonts/shabnam/Shabnam-Bold.eot');
+    src: url('../fonts/shabnam/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/shabnam/Shabnam-Bold.woff') format('woff'),
+    url('../fonts/shabnam/Shabnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('../fonts/shabnam/Shabnam-Light.eot');
+    src: url('../fonts/shabnam/Shabnam-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/shabnam/Shabnam-Light.woff') format('woff'),
+    url('../fonts/shabnam/Shabnam-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+body {
+    font-family: Shabnam, sans-serif;
+    direction: rtl;
+}
+
+#pando-logo {
+    margin: 30px 35px 0 0;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #e8aa00;
+    padding: 0 25px;
+    text-decoration: none;
+    transition: .2s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4c4c4c;
+}
+
+.members {
+    margin-top: 30px;
+}
+
+.member {
+    text-align: center;
+    overflow: hidden;
+    height: 540px;
+    padding: 20px;
+}
+
+.member img {
+    width: 70%;
+    border: solid 6px #e0e0e0;
+    height: auto;
+    border-radius: 50%;
+    filter: grayscale(.5);
+    transition: .2s;
+}
+
+.member img:hover {
+    filter: grayscale(0);
+}
+
+.member h3 {
+    font-size: 23px;
+    margin-top: 3px;
+    color: #2f2f2f;
+}
+
+.member h5 {
+    color: #929292;
+    margin-top: -17px;
+}
+
+.main-page {
+    margin: 100px 0;
+}
+
+footer {
+    direction: ltr;
+}

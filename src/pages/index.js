@@ -3,7 +3,9 @@ import Layout from "../components/layout"
 
 const IndexPage = () => (
   <Layout>
-    <h3>We're getting ready to launch soon...</h3>
+    <article className="row center-lg center-md center-sm center-xs main-page">
+      <h3>این وب‌سایت بزودی آماده خواهد شد...</h3>
+    </article>
   </Layout>
 )
 
