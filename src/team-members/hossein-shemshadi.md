@@ -2,6 +2,7 @@
 position: 6
 name: حسین شمشادی
 job: Frontend developer
+avatar: hossein-shemshadi.jpg
 linkedin: https://linkedin.com
 ---
 

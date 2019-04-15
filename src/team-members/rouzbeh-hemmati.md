@@ -2,6 +2,7 @@
 position: 1
 name: روزبه همتی
 job: Frontend developer
+avatar: rouzbeh-hemmati.jpg
 linkedin: https://linkedin.com
 ---
 

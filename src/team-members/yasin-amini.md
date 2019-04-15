@@ -2,6 +2,7 @@
 position: 3
 name: یاسین امینی
 job: Frontend developer
+avatar: yasin-amini.jpg
 linkedin: https://linkedin.com
 ---
 

@@ -2,15 +2,38 @@ import React, { Fragment } from "react"
 import { graphql, Link } from "gatsby"
 
 class Team extends React.Component {
-  getImageURL(avatar) {
-    console.log(avatar)
-    return 'https://regexone.com/cs/images/favicon.png'
+  state = {
+    members: [],
+    memberImages: [],
   }
 
-  render() {
+  componentDidMount() {
+    this.setMembers()
+    this.setMemberImages()
+  }
+
+  setMembers = () => {
     const { data } = this.props
     const members = data.allMarkdownRemark.edges
 
+    this.setState({ members })
+  }
+
+  setMemberImages = () => {
+    const {
+      data: { allFile },
+    } = this.props
+    const memberImages = {}
+
+    allFile.edges.forEach(({ node }) => {
+      memberImages[node.relativePath] = node.publicURL;
+    })
+
+    this.setState({ memberImages })
+  }
+
+  render() {
+    const { members, memberImages } = this.state
     return (
       <Fragment>
         <h3>This is our team members</h3>
@@ -19,7 +42,10 @@ class Team extends React.Component {
           {members.map(({ node }) => {
             return (
               <div key={node.id} className="member">
-                <img src={this.getImageURL(node.frontmatter)} alt={node.frontmatter.name} />
+                <img
+                  src={memberImages[node.frontmatter.avatar]}
+                  alt={node.frontmatter.name}
+                />
                 <h4>{node.frontmatter.name}</h4>
               </div>
             )
@@ -51,6 +77,15 @@ export const query = graphql`
           }
           html
           excerpt
+        }
+      }
+    }
+    allFile(filter: { sourceInstanceName: { eq: "members" } }) {
+      edges {
+        node {
+          id
+          relativePath
+          publicURL
         }
       }
     }

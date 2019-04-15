@@ -2,6 +2,7 @@
 position: 7
 name: محمود لهراسبی
 job: Frontend developer
+avatar: mahmoud-lohrasbi.jpg
 linkedin: https://linkedin.com
 ---
 

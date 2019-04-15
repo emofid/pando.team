@@ -2,6 +2,7 @@
 position: 4
 name: فرشاد نوروش
 job: Senior developer
+avatar: farshad_norawesh.jpg
 linkedin: https://linkedin.com
 ---
 

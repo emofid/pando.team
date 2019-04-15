@@ -2,6 +2,7 @@
 position: 2
 name: حسین حلالی
 job: Software architecture
+avatar: hossein-helali.jpg
 linkedin: https://linkedin.com
 ---
 
