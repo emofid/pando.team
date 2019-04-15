@@ -2,9 +2,10 @@
 position: 6
 name: حسین شمشادی
 job: Frontend developer
-linkedin: test.com
+avatar: hossein-shemshadi.jpg
+linkedin: https://linkedin.com
 ---
 
-This is moein alizadeh
-
-Hahaha
+فردی شاد با توانایی های فردی و تخصصی بالا
+همیشه تمرکز روی کار را ملاک قرار داده و در سریع ترین زمان ملزومات هر پروژه را آماده می‌کند.
+در اوقات بیکاری به مطالعه، کوهنوردی و شنا می‌پردازد و همیشه از گوش دادن به موسیقی های اصیل لذت می‌برد.

@@ -1,10 +1,11 @@
 ---
 position: 2
-name: حسین حلالی
+name: حسین هلالی
 job: Software architecture
-linkedin: test.com
+avatar: hossein-helali.jpg
+linkedin: https://linkedin.com
 ---
 
-This is moein alizadeh
-
-Hahaha
+فردی شاد با توانایی های فردی و تخصصی بالا
+همیشه تمرکز روی کار را ملاک قرار داده و در سریع ترین زمان ملزومات هر پروژه را آماده می‌کند.
+در اوقات بیکاری به مطالعه، کوهنوردی و شنا می‌پردازد و همیشه از گوش دادن به موسیقی های اصیل لذت می‌برد.
