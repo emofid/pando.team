@@ -2,7 +2,7 @@
 position: 9
 name: معین علیزاده
 job: Frontend Developer
-avatar: moein-alizadeh.jpg
+avatar: moeinAlizadeh.jpg
 linkedin: https://www.linkedin.com/in/truemoein
 instagram: https://instagram.com/truemoein
 twitter: https://twitter.com/truemoein

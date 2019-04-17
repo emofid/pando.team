@@ -2,7 +2,7 @@
 position: 10
 name: علی رضایی
 job: Product owner
-avatar: ali-rezaei.jpg
+avatar: aliRezaei.jpg
 linkedin: https://linkedin.com
 ---
 

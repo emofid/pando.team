@@ -2,7 +2,7 @@
 position: 2
 name: حسین هلالی
 job: Software architecture
-avatar: hossein-helali.jpg
+avatar: hosseinHelali.jpg
 linkedin: https://linkedin.com
 ---
 

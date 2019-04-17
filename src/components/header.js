@@ -10,7 +10,7 @@ const Header = () => (
       <Link to="/">
         <img src={PandoLogo} alt="Pando Team" id="pando-logo" />
       </Link>
-      <Navigation />
+      {/*<Navigation />*/}
     </div>
   </header>
 )

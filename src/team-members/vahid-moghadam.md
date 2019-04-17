@@ -2,7 +2,7 @@
 position: 5
 name: وحید مقدم
 job: Frontend developer
-avatar: vahid_moghadam.jpg
+avatar: vahidMoghadam.jpg
 linkedin: https://linkedin.com
 ---
 

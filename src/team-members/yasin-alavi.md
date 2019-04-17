@@ -2,7 +2,7 @@
 position: 8
 name: یاسین علوی
 job: Frontend developer
-avatar: yasin-alavi.jpg
+avatar: yasinAlavi.jpg
 linkedin: https://linkedin.com
 ---
 

@@ -34,7 +34,7 @@ export default class Members extends React.Component {
   render() {
     const { members, memberImages } = this.state
     return (
-      <article className="members row">
+      <article className="members row container">
         {members.map(({ node }) => {
           return (
             <div key={node.id} className="member col-md-4 col-xs-12">
